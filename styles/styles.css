@@ -73,6 +73,10 @@ body {
     color: var(--azul);
 }
 
+.container__imagem {
+    width: 50%;
+}
+
 .container__links {
     display: flex;
     flex-direction: column;    
