@@ -1,0 +1,134 @@
+:root {
+    --azul: #22D4FD;
+    --branco: #F6F6F6;
+    --preto: #000000;
+    --fonte-principal: "Krona One";
+    --fonte-secundaria: "Montserrat";
+    --cinza: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.container__cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.container__cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.container__cabecalho-link {
+    font-family: var(--fonte-secundaria), sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.container {
+    margin: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__principal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__titulo {
+    color: var(--branco);
+    font-family: var(--fonte-principal), sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+.titulo__secundario {
+    color: var(--azul);
+}
+
+.container__texto { 
+    color: var(--branco);
+    font-family: var(--fonte-secundaria), sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container__texto a{
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.container__links {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__link-subtitulo{
+    font-family: var(--fonte-principal),sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container__botao-link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--azul);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--fonte-secundaria), sans-serif;
+}
+
+.container__botao-link:hover {
+    background-color: var(--cinza);
+}
+
+.rodape {
+    padding: 24px;
+    background-color: var(--azul);
+    color: var(--preto);
+    text-align: center;
+    font-family: var(--fonte-secundaria),sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .container__cabecalho {
+        padding: 10%;
+    }
+    .container__cabecalho-menu {
+        justify-content: center;
+    }
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container__principal {
+        width: auto;
+    }
+}
